@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap_web_01",
+  "version": "1.0.0",
+  "description": "A website for a fake bootcamp made with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "minify-html": "html-minifier-terser src/index.html --collapse-whitespace --output=./index.html",
+    "optimize-css": "postcss src/style.css --use autoprefixer cssnano postcss-pxtorem --output=./style.css",
+    "build": "npm run minify-html && npm run optimize-css",
+    "author": "Pedro Furquim",
+    "license": "ISC"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-pxtorem": "^6.0.0"
+  }
+}
